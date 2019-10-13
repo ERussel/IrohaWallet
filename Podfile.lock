@@ -1,0 +1,121 @@
+PODS:
+  - BoringSSL (10.0.3):
+    - BoringSSL/Implementation (= 10.0.3)
+    - BoringSSL/Interface (= 10.0.3)
+  - BoringSSL/Implementation (10.0.3):
+    - BoringSSL/Interface (= 10.0.3)
+  - BoringSSL/Interface (10.0.3)
+  - CommonWallet (1.4.0):
+    - IrohaCommunication (~> 3.4.1)
+    - RobinHood (~> 2.0.0)
+    - SoraUI (~> 1.8.7)
+  - gRPC (1.11.0):
+    - gRPC-RxLibrary (= 1.11.0)
+    - gRPC/Main (= 1.11.0)
+  - gRPC-Core (1.11.0):
+    - gRPC-Core/Implementation (= 1.11.0)
+    - gRPC-Core/Interface (= 1.11.0)
+  - gRPC-Core/Implementation (1.11.0):
+    - BoringSSL (~> 10.0)
+    - gRPC-Core/Interface (= 1.11.0)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.11.0)
+  - gRPC-ProtoRPC (1.11.0):
+    - gRPC (= 1.11.0)
+    - gRPC-RxLibrary (= 1.11.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.11.0)
+  - gRPC/Main (1.11.0):
+    - gRPC-Core (= 1.11.0)
+    - gRPC-RxLibrary (= 1.11.0)
+  - IrohaCommunication (3.4.1):
+    - BoringSSL (= 10.0.3)
+    - gRPC-ProtoRPC (= 1.11.0)
+    - IrohaCrypto
+    - nanopb (= 0.3.8)
+    - Protobuf (~> 3.5.0)
+  - IrohaCrypto (0.2.6)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.5.0)
+  - RobinHood (2.0.1)
+  - SoraKeystore (0.1.4)
+  - SoraUI (1.8.7):
+    - SoraUI/AdaptiveDesign (= 1.8.7)
+    - SoraUI/Animator (= 1.8.7)
+    - SoraUI/Camera (= 1.8.7)
+    - SoraUI/Controls (= 1.8.7)
+    - SoraUI/DetailsView (= 1.8.7)
+    - SoraUI/EmptyState (= 1.8.7)
+    - SoraUI/LoadingView (= 1.8.7)
+    - SoraUI/ModalInputPresentation (= 1.8.7)
+    - SoraUI/PageLoader (= 1.8.7)
+    - SoraUI/PinView (= 1.8.7)
+    - SoraUI/Skrull (= 1.8.7)
+  - SoraUI/AdaptiveDesign (1.8.7)
+  - SoraUI/Animator (1.8.7)
+  - SoraUI/Camera (1.8.7)
+  - SoraUI/Controls (1.8.7)
+  - SoraUI/DetailsView (1.8.7):
+    - SoraUI/Controls
+  - SoraUI/EmptyState (1.8.7):
+    - SoraUI/Animator
+  - SoraUI/LoadingView (1.8.7):
+    - SoraUI/Controls
+  - SoraUI/ModalInputPresentation (1.8.7):
+    - SoraUI/Animator
+  - SoraUI/PageLoader (1.8.7)
+  - SoraUI/PinView (1.8.7):
+    - SoraUI/Controls
+  - SoraUI/Skrull (1.8.7)
+
+DEPENDENCIES:
+  - CommonWallet (from `https://github.com/soramitsu/Capital-iOS.git`, commit `5ab4c792273e9708e3325fd8d8cd229d03191edf`)
+  - SoraKeystore
+
+SPEC REPOS:
+  trunk:
+    - BoringSSL
+    - gRPC
+    - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
+    - IrohaCommunication
+    - IrohaCrypto
+    - nanopb
+    - Protobuf
+    - RobinHood
+    - SoraKeystore
+    - SoraUI
+
+EXTERNAL SOURCES:
+  CommonWallet:
+    :commit: 5ab4c792273e9708e3325fd8d8cd229d03191edf
+    :git: https://github.com/soramitsu/Capital-iOS.git
+
+CHECKOUT OPTIONS:
+  CommonWallet:
+    :commit: 5ab4c792273e9708e3325fd8d8cd229d03191edf
+    :git: https://github.com/soramitsu/Capital-iOS.git
+
+SPEC CHECKSUMS:
+  BoringSSL: c46efb47593135382bc0934196f16d2f726f5f36
+  CommonWallet: f805285b70d41659fab2c4b16fd687c68ad143be
+  gRPC: 70703dc9ba31c72341fc7f37745cc1c379edee96
+  gRPC-Core: 164639cd8ae18ca8b65477fafb2efbaecf4f181a
+  gRPC-ProtoRPC: bb5fddf3424aa4fad74d76736578a79fe40e244e
+  gRPC-RxLibrary: 26d53d1b1f306befd4ad4e15bd6de27839a82481
+  IrohaCommunication: 988a6f7fe468a863486e183fb8da617519ccb94e
+  IrohaCrypto: 4eb85b5edbf7667b5ffcef1b5104357f18ca8e81
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  RobinHood: ed86ee904084d3a3b731dc57f5209c4e45fe33dc
+  SoraKeystore: 4abb9c667e5294fcb86961d9c2e9aa38889c653c
+  SoraUI: d497b990f00b33d1b099f73da93fff555f36b722
+
+PODFILE CHECKSUM: 0e019876c9ba122300d91f01f4453b9b5795956b
+
+COCOAPODS: 1.8.3

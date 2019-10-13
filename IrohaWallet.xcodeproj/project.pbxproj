@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BCFFB0E9C64393BEB8AF837 /* Pods_IrohaWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37792A4087AAA299D3004EB /* Pods_IrohaWalletTests.framework */; };
+		8433D2F3235268AE00263405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433D2F2235268AE00263405 /* AppDelegate.swift */; };
+		8433D2FC235268B000263405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8433D2FB235268B000263405 /* Assets.xcassets */; };
+		8433D2FF235268B000263405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433D2FD235268B000263405 /* LaunchScreen.storyboard */; };
+		8433D30A235268B000263405 /* IrohaWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433D309235268B000263405 /* IrohaWalletTests.swift */; };
+		8433D31523526B7000263405 /* ContextFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433D31423526B7000263405 /* ContextFactory.swift */; };
+		8433D3192352750500263405 /* NetworkOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433D3182352750500263405 /* NetworkOperationFactory.swift */; };
+		84FD348B2353CD9B00AD9B7E /* WalletHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD34882353CD9B00AD9B7E /* WalletHeaderCell.swift */; };
+		84FD348C2353CD9B00AD9B7E /* WalletHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD34892353CD9B00AD9B7E /* WalletHeaderViewModel.swift */; };
+		84FD348D2353CD9B00AD9B7E /* WalletHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FD348A2353CD9B00AD9B7E /* WalletHeaderCell.xib */; };
+		84FD34912353CFE800AD9B7E /* DefaultEmptyStateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD348F2353CFE800AD9B7E /* DefaultEmptyStateDataSource.swift */; };
+		84FD34922353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD34902353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift */; };
+		9AE5A28FF14FEC74F04375C5 /* Pods_IrohaWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAB18305FC8DFF2EF9000ED /* Pods_IrohaWallet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8433D306235268B000263405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8433D2E7235268AE00263405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8433D2EE235268AE00263405;
+			remoteInfo = IrohaWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CAB18305FC8DFF2EF9000ED /* Pods_IrohaWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrohaWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E3A7A40C0B321338DD97C3 /* Pods-IrohaWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaWalletTests.release.xcconfig"; path = "Target Support Files/Pods-IrohaWalletTests/Pods-IrohaWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		8433D2EF235268AE00263405 /* IrohaWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrohaWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8433D2F2235268AE00263405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8433D2FB235268B000263405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8433D2FE235268B000263405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8433D300235268B000263405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8433D305235268B000263405 /* IrohaWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrohaWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8433D309235268B000263405 /* IrohaWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrohaWalletTests.swift; sourceTree = "<group>"; };
+		8433D30B235268B000263405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8433D31423526B7000263405 /* ContextFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextFactory.swift; sourceTree = "<group>"; };
+		8433D3182352750500263405 /* NetworkOperationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperationFactory.swift; sourceTree = "<group>"; };
+		84FD34882353CD9B00AD9B7E /* WalletHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletHeaderCell.swift; sourceTree = "<group>"; };
+		84FD34892353CD9B00AD9B7E /* WalletHeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletHeaderViewModel.swift; sourceTree = "<group>"; };
+		84FD348A2353CD9B00AD9B7E /* WalletHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletHeaderCell.xib; sourceTree = "<group>"; };
+		84FD348F2353CFE800AD9B7E /* DefaultEmptyStateDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEmptyStateDataSource.swift; sourceTree = "<group>"; };
+		84FD34902353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DefaultEmptyStateDataSource+Module.swift"; sourceTree = "<group>"; };
+		B1625AB632F01ECF3EE98885 /* Pods-IrohaWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaWallet.release.xcconfig"; path = "Target Support Files/Pods-IrohaWallet/Pods-IrohaWallet.release.xcconfig"; sourceTree = "<group>"; };
+		CF854AD49151C14D0BBA4BD9 /* Pods-IrohaWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-IrohaWalletTests/Pods-IrohaWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D37792A4087AAA299D3004EB /* Pods_IrohaWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrohaWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE65B1538F062D91B4B40164 /* Pods-IrohaWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaWallet.debug.xcconfig"; path = "Target Support Files/Pods-IrohaWallet/Pods-IrohaWallet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8433D2EC235268AE00263405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE5A28FF14FEC74F04375C5 /* Pods_IrohaWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8433D302235268B000263405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCFFB0E9C64393BEB8AF837 /* Pods_IrohaWalletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BA40D4E61814432852A0384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CAB18305FC8DFF2EF9000ED /* Pods_IrohaWallet.framework */,
+				D37792A4087AAA299D3004EB /* Pods_IrohaWalletTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8433D2E6235268AE00263405 = {
+			isa = PBXGroup;
+			children = (
+				8433D2F1235268AE00263405 /* IrohaWallet */,
+				8433D308235268B000263405 /* IrohaWalletTests */,
+				8433D2F0235268AE00263405 /* Products */,
+				FDF3C1A1B2F9009359AA2EF9 /* Pods */,
+				7BA40D4E61814432852A0384 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8433D2F0235268AE00263405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8433D2EF235268AE00263405 /* IrohaWallet.app */,
+				8433D305235268B000263405 /* IrohaWalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8433D2F1235268AE00263405 /* IrohaWallet */ = {
+			isa = PBXGroup;
+			children = (
+				84FD348E2353CFE800AD9B7E /* EmptyState */,
+				84FD34872353CD9B00AD9B7E /* View */,
+				8433D2F2235268AE00263405 /* AppDelegate.swift */,
+				8433D31423526B7000263405 /* ContextFactory.swift */,
+				8433D3182352750500263405 /* NetworkOperationFactory.swift */,
+				8433D2FB235268B000263405 /* Assets.xcassets */,
+				8433D2FD235268B000263405 /* LaunchScreen.storyboard */,
+				8433D300235268B000263405 /* Info.plist */,
+			);
+			path = IrohaWallet;
+			sourceTree = "<group>";
+		};
+		8433D308235268B000263405 /* IrohaWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				8433D309235268B000263405 /* IrohaWalletTests.swift */,
+				8433D30B235268B000263405 /* Info.plist */,
+			);
+			path = IrohaWalletTests;
+			sourceTree = "<group>";
+		};
+		84FD34872353CD9B00AD9B7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84FD34882353CD9B00AD9B7E /* WalletHeaderCell.swift */,
+				84FD34892353CD9B00AD9B7E /* WalletHeaderViewModel.swift */,
+				84FD348A2353CD9B00AD9B7E /* WalletHeaderCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84FD348E2353CFE800AD9B7E /* EmptyState */ = {
+			isa = PBXGroup;
+			children = (
+				84FD348F2353CFE800AD9B7E /* DefaultEmptyStateDataSource.swift */,
+				84FD34902353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift */,
+			);
+			path = EmptyState;
+			sourceTree = "<group>";
+		};
+		FDF3C1A1B2F9009359AA2EF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE65B1538F062D91B4B40164 /* Pods-IrohaWallet.debug.xcconfig */,
+				B1625AB632F01ECF3EE98885 /* Pods-IrohaWallet.release.xcconfig */,
+				CF854AD49151C14D0BBA4BD9 /* Pods-IrohaWalletTests.debug.xcconfig */,
+				52E3A7A40C0B321338DD97C3 /* Pods-IrohaWalletTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8433D2EE235268AE00263405 /* IrohaWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8433D30E235268B100263405 /* Build configuration list for PBXNativeTarget "IrohaWallet" */;
+			buildPhases = (
+				52A404CF2FEA5BD6BD261877 /* [CP] Check Pods Manifest.lock */,
+				8433D2EB235268AE00263405 /* Sources */,
+				8433D2EC235268AE00263405 /* Frameworks */,
+				8433D2ED235268AE00263405 /* Resources */,
+				CF90932E90D6CF425556A217 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IrohaWallet;
+			productName = IrohaWallet;
+			productReference = 8433D2EF235268AE00263405 /* IrohaWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8433D304235268B000263405 /* IrohaWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8433D311235268B100263405 /* Build configuration list for PBXNativeTarget "IrohaWalletTests" */;
+			buildPhases = (
+				B7313E724A7CE7DFC9DE3D93 /* [CP] Check Pods Manifest.lock */,
+				8433D301235268B000263405 /* Sources */,
+				8433D302235268B000263405 /* Frameworks */,
+				8433D303235268B000263405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8433D307235268B000263405 /* PBXTargetDependency */,
+			);
+			name = IrohaWalletTests;
+			productName = IrohaWalletTests;
+			productReference = 8433D305235268B000263405 /* IrohaWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8433D2E7235268AE00263405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Soramitsu;
+				TargetAttributes = {
+					8433D2EE235268AE00263405 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8433D304235268B000263405 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8433D2EE235268AE00263405;
+					};
+				};
+			};
+			buildConfigurationList = 8433D2EA235268AE00263405 /* Build configuration list for PBXProject "IrohaWallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8433D2E6235268AE00263405;
+			productRefGroup = 8433D2F0235268AE00263405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8433D2EE235268AE00263405 /* IrohaWallet */,
+				8433D304235268B000263405 /* IrohaWalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8433D2ED235268AE00263405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FD348D2353CD9B00AD9B7E /* WalletHeaderCell.xib in Resources */,
+				8433D2FF235268B000263405 /* LaunchScreen.storyboard in Resources */,
+				8433D2FC235268B000263405 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8433D303235268B000263405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52A404CF2FEA5BD6BD261877 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrohaWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7313E724A7CE7DFC9DE3D93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IrohaWalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF90932E90D6CF425556A217 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrohaWallet/Pods-IrohaWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IrohaWallet/Pods-IrohaWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IrohaWallet/Pods-IrohaWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8433D2EB235268AE00263405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FD348C2353CD9B00AD9B7E /* WalletHeaderViewModel.swift in Sources */,
+				8433D2F3235268AE00263405 /* AppDelegate.swift in Sources */,
+				84FD34912353CFE800AD9B7E /* DefaultEmptyStateDataSource.swift in Sources */,
+				8433D3192352750500263405 /* NetworkOperationFactory.swift in Sources */,
+				84FD34922353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift in Sources */,
+				8433D31523526B7000263405 /* ContextFactory.swift in Sources */,
+				84FD348B2353CD9B00AD9B7E /* WalletHeaderCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8433D301235268B000263405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8433D30A235268B000263405 /* IrohaWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8433D307235268B000263405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8433D2EE235268AE00263405 /* IrohaWallet */;
+			targetProxy = 8433D306235268B000263405 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8433D2FD235268B000263405 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8433D2FE235268B000263405 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8433D30C235268B100263405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8433D30D235268B100263405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8433D30F235268B100263405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE65B1538F062D91B4B40164 /* Pods-IrohaWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLWWUD25VZ;
+				INFOPLIST_FILE = IrohaWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.soramitsu.IrohaWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8433D310235268B100263405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1625AB632F01ECF3EE98885 /* Pods-IrohaWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLWWUD25VZ;
+				INFOPLIST_FILE = IrohaWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.soramitsu.IrohaWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8433D312235268B100263405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF854AD49151C14D0BBA4BD9 /* Pods-IrohaWalletTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLWWUD25VZ;
+				INFOPLIST_FILE = IrohaWalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.soramitsu.IrohaWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IrohaWallet.app/IrohaWallet";
+			};
+			name = Debug;
+		};
+		8433D313235268B100263405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E3A7A40C0B321338DD97C3 /* Pods-IrohaWalletTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLWWUD25VZ;
+				INFOPLIST_FILE = IrohaWalletTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.soramitsu.IrohaWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IrohaWallet.app/IrohaWallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8433D2EA235268AE00263405 /* Build configuration list for PBXProject "IrohaWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8433D30C235268B100263405 /* Debug */,
+				8433D30D235268B100263405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8433D30E235268B100263405 /* Build configuration list for PBXNativeTarget "IrohaWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8433D30F235268B100263405 /* Debug */,
+				8433D310235268B100263405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8433D311235268B100263405 /* Build configuration list for PBXNativeTarget "IrohaWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8433D312235268B100263405 /* Debug */,
+				8433D313235268B100263405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8433D2E7235268AE00263405 /* Project object */;
+}
