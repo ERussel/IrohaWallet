@@ -8,10 +8,6 @@ import CommonWallet
 import RobinHood
 import IrohaCommunication
 
-enum NetworkOperationFactoryError: Error {
-    case undefined
-}
-
 final class NetworkOperationFactory {
     let account: WalletAccountSettingsProtocol
     let irohaService: IRNetworkService
@@ -61,7 +57,10 @@ extension NetworkOperationFactory: WalletNetworkOperationFactoryProtocol {
     }
 
     func transferOperation(_ info: TransferInfo) -> BaseOperation<Void> {
-        return ClosureOperation {}
+        return TransferOperation(service: irohaService,
+                                 transferInfo: info,
+                                 userSigner: account.signer,
+                                 userPublicKey: account.publicKey)
     }
 
     func searchOperation(_ searchString: String) -> BaseOperation<[SearchData]?> {
