@@ -17,3 +17,7 @@ It is time to make transfers!
 1. Find TransferOperation class.
 2. Add corresponding logic to send transfer transaction. Use AccountOperation as an example.
 3. Run Application and try to send something to your peer.
+
+# Not enough?
+
+Think how you would implement transaction history and add HistoryOperation class.
