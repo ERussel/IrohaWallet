@@ -18,7 +18,7 @@ final class NetworkOperationFactory {
     init(account: WalletAccountSettingsProtocol) throws {
         self.account = account
 
-        let address = try IRAddressFactory.address(withIp: "127.0.0.1", port: "50051")
+        let address = try IRAddressFactory.address(withIp: "188.166.164.96", port: "50051")
         irohaService = IRNetworkService(address: address)
 
         let privateKeyData = NSData(hexString: "7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390")! as Data
