@@ -14,7 +14,7 @@ struct ContextFactory {
     static func createContext() throws -> CommonWalletContextProtocol {
         let account = try createAccountSettings()
 
-        let operationFactory = NetworkOperationFactory(account: account)
+        let operationFactory = try NetworkOperationFactory(account: account)
         let contextBuilder = CommonWalletBuilder.builder(with: account, networkOperationFactory: operationFactory)
 
         try configureAccountList(module: contextBuilder.accountListModuleBuilder)

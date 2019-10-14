@@ -9,17 +9,38 @@ enum NetworkOperationFactoryError: Error {
 
 final class NetworkOperationFactory {
     let account: WalletAccountSettingsProtocol
+    let irohaService: IRNetworkService
 
-    init(account: WalletAccountSettingsProtocol) {
+    let registrationSigner: IRSignatureCreatorProtocol
+    let registrationAccountId: IRAccountId
+    let registrationPublicKey: IRPublicKeyProtocol
+
+    init(account: WalletAccountSettingsProtocol) throws {
         self.account = account
+
+        let address = try IRAddressFactory.address(withIp: "127.0.0.1", port: "50051")
+        irohaService = IRNetworkService(address: address)
+
+        let privateKeyData = NSData(hexString: "7e00405ece477bb6dd9b03a78eee4e708afc2f5bcdce399573a5958942f4a390")! as Data
+        let privateKey = IREd25519PrivateKey(rawData: privateKeyData)!
+        let keypair = IREd25519KeyFactory().derive(fromPrivateKey: privateKey)!
+
+        registrationSigner = IREd25519Sha512Signer(privateKey: privateKey)!
+        registrationAccountId = try IRAccountIdFactory.accountId(withName: "registrator", domain: account.accountId.domain)
+        registrationPublicKey = keypair.publicKey()
     }
 }
 
 extension NetworkOperationFactory: WalletNetworkOperationFactoryProtocol {
     func fetchBalanceOperation(_ assets: [IRAssetId]) -> BaseOperation<[BalanceData]?> {
-        return ClosureOperation {
-            return assets.map { BalanceData(identifier: $0.identifier(), balance: "100")}
-        }
+        return AccountOperation(service: irohaService,
+                                userAccountId: account.accountId,
+                                userSigner: account.signer,
+                                userPublicKey: account.publicKey,
+                                assetIds: assets,
+                                registrationAccountId: registrationAccountId,
+                                registrationSigner: registrationSigner,
+                                registrationPublicKey: registrationPublicKey)
     }
 
     func fetchTransactionHistoryOperation(_ filter: WalletHistoryRequest, pagination: OffsetPagination) -> BaseOperation<AssetTransactionPageData?> {
