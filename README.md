@@ -12,7 +12,7 @@ Practical example of Wallet application based on Iroha
 # What is next?
 
 Currently a user can only view balance. Ask some coins from Tutor and make sure your balance is changing on refresh. 
-It time to make transfers!
+It is time to make transfers!
 
 1. Find TransferOperation class.
 2. Add corresponding logic to send transfer transaction. Use AccountOperation as an example.
