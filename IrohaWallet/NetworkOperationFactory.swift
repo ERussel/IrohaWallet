@@ -56,7 +56,7 @@ extension NetworkOperationFactory: WalletNetworkOperationFactoryProtocol {
 
     func transferMetadataOperation(_ assetId: IRAssetId) -> BaseOperation<TransferMetaData?> {
         return ClosureOperation {
-            return nil
+            return TransferMetaData(feeAccountId: nil, feeType: "FACTOR", feeRate: "0")
         }
     }
 
@@ -65,7 +65,17 @@ extension NetworkOperationFactory: WalletNetworkOperationFactoryProtocol {
     }
 
     func searchOperation(_ searchString: String) -> BaseOperation<[SearchData]?> {
-        return ClosureOperation { return [] }
+        return ClosureOperation {
+            do {
+                let accountId = try IRAccountIdFactory.account(withIdentifier: searchString)
+                let result = SearchData(accountId: accountId.identifier(),
+                                        firstName: accountId.identifier(),
+                                        lastName: "")
+                return [result]
+            } catch {
+                return []
+            }
+        }
     }
 
     func contactsOperation() -> BaseOperation<[SearchData]?> {

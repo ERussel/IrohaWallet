@@ -21,6 +21,7 @@
 		84FD34922353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD34902353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift */; };
 		84FD34952354DD3D00AD9B7E /* AccountOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD34942354DD3D00AD9B7E /* AccountOperation.swift */; };
 		84FD34982354FA9900AD9B7E /* NSError+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD34972354FA9900AD9B7E /* NSError+String.swift */; };
+		84FD349E235521CD00AD9B7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FD349D235521CD00AD9B7E /* InfoPlist.strings */; };
 		9AE5A28FF14FEC74F04375C5 /* Pods_IrohaWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAB18305FC8DFF2EF9000ED /* Pods_IrohaWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		84FD34902353CFE800AD9B7E /* DefaultEmptyStateDataSource+Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DefaultEmptyStateDataSource+Module.swift"; sourceTree = "<group>"; };
 		84FD34942354DD3D00AD9B7E /* AccountOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountOperation.swift; sourceTree = "<group>"; };
 		84FD34972354FA9900AD9B7E /* NSError+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+String.swift"; sourceTree = "<group>"; };
+		84FD349D235521CD00AD9B7E /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		B1625AB632F01ECF3EE98885 /* Pods-IrohaWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaWallet.release.xcconfig"; path = "Target Support Files/Pods-IrohaWallet/Pods-IrohaWallet.release.xcconfig"; sourceTree = "<group>"; };
 		CF854AD49151C14D0BBA4BD9 /* Pods-IrohaWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrohaWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-IrohaWalletTests/Pods-IrohaWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D37792A4087AAA299D3004EB /* Pods_IrohaWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrohaWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				8433D2FB235268B000263405 /* Assets.xcassets */,
 				8433D2FD235268B000263405 /* LaunchScreen.storyboard */,
 				8433D300235268B000263405 /* Info.plist */,
+				84FD349D235521CD00AD9B7E /* InfoPlist.strings */,
 			);
 			path = IrohaWallet;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FD348D2353CD9B00AD9B7E /* WalletHeaderCell.xib in Resources */,
+				84FD349E235521CD00AD9B7E /* InfoPlist.strings in Resources */,
 				8433D2FF235268B000263405 /* LaunchScreen.storyboard in Resources */,
 				8433D2FC235268B000263405 /* Assets.xcassets in Resources */,
 			);

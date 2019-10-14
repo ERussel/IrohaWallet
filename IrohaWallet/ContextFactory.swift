@@ -65,7 +65,7 @@ struct ContextFactory {
 
     private static func configureContacts(module: ContactsModuleBuilderProtocol) {
         module
-            .with(searchPlaceholder: "Enter public key")
+            .with(searchPlaceholder: "Enter account id")
             .with(contactsEmptyStateDataSource: DefaultEmptyStateDataSource.contacts)
             .with(searchEmptyStateDataSource: DefaultEmptyStateDataSource.search)
             .with(supportsLiveSearch: false)
