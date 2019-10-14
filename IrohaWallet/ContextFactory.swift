@@ -35,9 +35,26 @@ struct ContextFactory {
         let headerViewModel = WalletHeaderViewModel(title: "Wallet", style: titleStyle)
         let headerNib = UINib(nibName: "WalletHeaderCell", bundle: Bundle.main)
 
+        let shadow = WalletShadowStyle(offset: CGSize(width: 0.0, height: 5.0),
+                                       color: UIColor.black,
+                                       opacity: 0.04,
+                                       blurRadius: 4.0)
+
+        let cardStyle = CardAssetStyle(backgroundColor: .white,
+                                       leftFillColor: UIColor(red: 75.0 / 255.0, green: 140.0 / 255.0, blue: 189.0 / 255.0, alpha: 1.0),
+                                       symbol: WalletTextStyle(font: UIFont(name: "HelveticaNeue-Medium", size: 18.0)!, color: .white),
+                                       title: WalletTextStyle(font: UIFont(name: "HelveticaNeue-Medium", size: 18.0)!, color: UIColor.black),
+                                       subtitle: WalletTextStyle(font: UIFont(name: "HelveticaNeue", size: 14.0)!,
+                                                                 color: UIColor(white: 97.0 / 255.0, alpha: 1.0)),
+                                       accessory: WalletTextStyle(font: UIFont(name: "HelveticaNeue", size: 14.0)!,
+                                                                  color: UIColor(white: 97.0 / 255.0, alpha: 1.0)),
+                                       shadow: shadow,
+                                       cornerRadius: 10.0)
+
         try module
             .inserting(viewModelFactory: { headerViewModel }, at: 0)
             .with(cellNib: headerNib, for: headerViewModel.cellReuseIdentifier)
+            .with(assetCellStyle: AssetCellStyle.card(cardStyle))
     }
 
     private static func configureHistory(module: HistoryModuleBuilderProtocol) {
