@@ -14,7 +14,7 @@ Practical example of Wallet application based on Iroha
 4. Open IrohaWallet.xcworkspace and Run.
 
 
-# What is next?
+# What is next
 
 Currently a user can only view balance. Ask some coins from Tutor and make sure your balance is changing on refresh. 
 It is time to make transfers!
