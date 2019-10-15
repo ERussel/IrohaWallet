@@ -1,6 +1,11 @@
 # IrohaWallet
 Practical example of Wallet application based on Iroha
 
+# Prerequisites
+
+1. XCode 11
+2. Cocoapods
+
 # Get Started
 
 1. Git clone repository
